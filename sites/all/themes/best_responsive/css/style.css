@@ -1,0 +1,112 @@
+@charset "utf-8";/* CSS Document */
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	background:url(../images/bg.png) no-repeat right top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#393939;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+* {
+	margin:0;
+	padding:0;
+}
+.clear {
+	clear:both;
+}
+a {
+	text-decoration:none;
+	outline:none;
+}
+
+
+
+.main-wrapper{ width:1000px; margin:0 auto;}
+
+.topcontain{ width:100%; margin:16px 0 26px 0; clear:both;}
+
+.topcontain .logo{ width:187px; float:left;}
+
+
+.top-right-contain{ width:770px; float:right;}
+
+
+.top-right-contain .tright-menu{ width:300px; float:right;}
+
+.top-right-contain .tright-menu a{ font-family:Arial, Helvetica, sans-serif; color:#083457; padding:0 5px;}
+.top-right-contain .tright-menu a:hover{ color:#557f06}
+
+.top-right-contain .tright-menu .typemenu{ background:url(../images/arrow.png) no-repeat right 2px; padding:0 14px 0 7px;}
+
+
+.top-right-contain .left-menu{ margin:40px 0 0 0; width:400px; float:left;  font-family: 'open_sansregular'; }
+
+.top-right-contain .left-menu a{ font-size:15px; color:#083457; padding:0 12px;}
+.top-right-contain .left-menu a:hover{ color:#7fb41c;}
+
+.top-right-contain .search-contain{ width:365px; float:right; margin:28px 0 0 0; background:url(../images/cart.png) no-repeat right center; padding:5px 0; }
+
+.top-right-contain .search-contain .search-main{ width:315px;  height:32px; border:solid 1px #d7d7d7; background:#fff;}
+
+.top-right-contain .search-contain .search-main input[type="text"]{ width:277px; height:32px; background:#fff; border:none; padding:0 4px; line-height:30px; color:#777; display:block; float:left; font-size:14px;}
+
+.top-right-contain .search-contain .search-main input[type="submit"]{ background:url(../images/search.png) no-repeat; width:22px; height:22px; display:block; float:right; border:none; margin:5px 5px 0 0; cursor:pointer;}
+ 
+.menu-contain{ width:100%; background:#083457; text-align:center;} 
+
+.menu-contain a{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#fafafa; line-height:57px; padding:0 62px;}
+ 
+ .menu-contain a:hover{ color:#7fb41c;}
+ 
+ 
+.footer-contain{ width:100%; border-bottom:solid 2px #d4d4d4; border-top:solid 2px #d4d4d4; height:46px; padding:6px 0; margin:28px 0; }
+ 
+ .footer-contain .footer-left{ width:275px; float:left; border-right:solid 2px #a2a2a2; font-size:13px; color:#515151;  font-family: 'open_sansregular';}
+  
+.footer-contain .footer-left  span{ display:inline-block; float:left; margin:0 4px 0 0; padding:0; line-height:44px; }
+ .footer-contain .footer-left img{ margin:13px 4px 0 4px;}
+	
+.footer-menu{ width:718px; float:right; font-family: 'open_sansregular';}
+	
+.footer-menu a{ font-size:13px; color:#515151; padding:0 20px; line-height:44px;}
+.footer-menu a:hover{ color:#7fb41c;}
+
+
+.banner1{ background:#e8e9eb url(../images/banner1bg.png) no-repeat left top; width:1000px; margin:0 auto; height:382px; }
+
+.banner1 .banner1-text{ width:540px; float:right; font-family: 'open_sansregular'; padding:0 30px;}
+
+.banner1 .banner1-text h1{ font-size:24px; color:#393939; text-align:center; font-weight:normal; margin:11px 0 0 0 ; padding:0;}
+
+.banner1 .banner1-text h2{ font-size:16px; color:#393939; text-align:center; font-weight:normal; margin:5px 0 0 0; padding:0;}
+
+.banner1 .banner1-text img{ display:block; margin:10px auto;}
+
+
+.banner1 .bottom-left-text{ width:230px; float:left; font-size:11px; color:#393939; font-family: 'open_sansregular'; line-height:18px;}
+
+.banner1 .rearn-more{ background:url(../images/border.png) no-repeat left bottom; padding-bottom:6px; display:inline-block; float:right; font-family: 'open_sansregular';}
+
+.banner1 .rearn-more a{ color:#638524; font-style:italic;}
+ 
+ 
+ 
+ 
+ 
+
