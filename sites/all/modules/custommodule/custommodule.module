@@ -26,3 +26,66 @@ function custommodule_preprocess_node(&$variables) {
 
 
 
+function custommodule_form_alter(&$form, &$form_state, $form_id) {
+
+    if ($form_id == 'user_login') {
+        $form['name']['#attributes']['placeholder'] = t( 'Username' );
+        $form['name']['#description'] = t('');
+        $form['pass']['#description'] = t('');
+        $form['pass']['#attributes']['placeholder'] = t( 'Password' );
+        $form['#prefix'] = '<h2> <span>Log</span> in</h2>';
+        //$form['#suffix'] = '<span class="sign-up-text">Forgot Your Password? <a href="'.$GLOBALS['base_url'].'/user/password"> Click Here</a></span></div>';
+    }
+	if ($form_id == 'user_register_form') {
+        //$form['account']['name']['#attributes']['placeholder'] = t( 'Desired Username' );
+		$form['account']['name']['#description'] = t('');
+        //$form['account']['mail']['#attributes']['placeholder'] = t( 'E-mail' );
+		$form['account']['mail']['#description'] = t('');
+        $form['#prefix'] = '<h2> <span>Sign</span> up </h2>';
+        //$form['#suffix'] = '<span class="sign-up-text">Already Have An Account With Heroez Fit?<a href="'.$GLOBALS['base_url'].'/user/login"> Login</a></span></div>';
+	}
+	
+	if($form_id == 'category_node_form'){
+		$x=arg();
+		if($x[2]=='edit')
+            $form['#prefix'] = '<h2> Edit Category </h2>';
+		else
+			$form['#prefix'] = '<h2> Add Category </h2>';
+			
+		$form['actions']['submit']['#submit'][] = 'MYMODULE_submit_category';
+	}
+
+    if($form_id == 'product_node_form'){
+        $form['taxonomy_catalog']['#type'] = 'hidden';
+        $form['base']['prices']['list_price']['#type'] = 'hidden';
+        $form['base']['prices']['cost']['#type'] = 'hidden';
+        $form['base']['shippable']['#type'] = 'hidden';
+        $form['base']['prices']['sell_price']['#title'] = 'Price';
+
+
+        $x=arg();
+        if($x[2]=='edit')
+            $form['#prefix'] = '<h2>Edit Product</h2>';
+        else
+            $form['#prefix'] = '<h2>Add Product</h2>';
+        
+		$form['actions']['submit']['#submit'][] = 'MYMODULE_submit_product';
+
+
+    }
+	
+	
+	
+}
+
+
+function MYMODULE_submit_category ($form, &$form_state) {
+    //code here
+    $form_state['redirect'] = '/category-listing'; //REDIRECTS TO STEP 2 after submit
+}
+
+function MYMODULE_submit_product ($form, &$form_state) {
+    //code here
+    $form_state['redirect'] = '/category-listing'; //REDIRECTS TO STEP 2 after submit
+}
+

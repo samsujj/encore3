@@ -1,3 +1,21 @@
+<!--menu-->
+
+<div class="menu-div-body">
+                            <ul>
+                              <li><a href="<?php echo $GLOBALS['base_url']  ?>">Home</a></li>
+                              <li><a href="<?php echo $GLOBALS['base_url']  ?>/node/add/category">Add Category</a></li>
+                              <li><a href="<?php echo $GLOBALS['base_url']  ?>/category-listing">Category List</a></li>
+                              <li><a href="<?php echo $GLOBALS['base_url']  ?>/node/add/product">Add Product</a></li>
+                              <li><a href="<?php echo $GLOBALS['base_url']  ?>/category-listing">Product List</a></li>
+
+                               <div class="clear"></div>
+                                </ul>
+                              <div class="clear"></div>
+                         </div>
+<!--menu-->
+
+
+
 <!-- Header [start] -->
 <div class="main-wrapper">
 <div class="topcontain">
@@ -14,7 +32,7 @@
   <?php }else{ ?>
 		<a href="<?php echo $GLOBALS['base_url']  ?>/user/logout">Log Out</a>    
   <?php } ?>
-  <a href="#">Satisfaction Guarantee</a>    <a href="#" class="typemenu">US-English</a>
+  <a href="#">Satisfaction Guarantee</a>    <a href="#" class="typemenu">US-English</a> <a href="#" class="cartmenu">Cart <span>(00)</span></a>
   </div>
   <div class="clear"></div>
   
