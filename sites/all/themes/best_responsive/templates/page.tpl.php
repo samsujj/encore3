@@ -1,17 +1,25 @@
 <!--menu-->
+<?php
+  global $user;
+  $roles=($user->roles);
+  if (array_key_exists(4, $roles)) {
 
+
+  ?>
 <div class="menu-div-body">
                             <ul>
                               <li><a href="<?php echo $GLOBALS['base_url']  ?>">Home</a></li>
                               <li><a href="<?php echo $GLOBALS['base_url']  ?>/node/add/category">Add Category</a></li>
                               <li><a href="<?php echo $GLOBALS['base_url']  ?>/category-listing">Category List</a></li>
                               <li><a href="<?php echo $GLOBALS['base_url']  ?>/node/add/product">Add Product</a></li>
-                              <li><a href="<?php echo $GLOBALS['base_url']  ?>/category-listing">Product List</a></li>
+                              <li><a href="<?php echo $GLOBALS['base_url']  ?>/product-admin-list">Product List</a></li>
+                              <li><a href="<?php echo $GLOBALS['base_url']  ?>/admin/store/products/attributes">Product Attribute List</a></li>
 
                                <div class="clear"></div>
                                 </ul>
                               <div class="clear"></div>
                          </div>
+  <?php } ?>						 
 <!--menu-->
 
 

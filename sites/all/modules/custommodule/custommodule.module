@@ -8,11 +8,41 @@
 
 
 
-/*function custommodule_init(){
-    echo 'Today: \n';
-    echo date('m/d/Y');
-   
-}*/
+function custommodule_init(){
+/*
+    $x=arg();
+	$query = new EntityFieldQuery();
+	
+
+
+	$query->entityCondition('entity_type', 'node')
+	  ->entityCondition('bundle', 'product')
+	  ->propertyCondition('status', NODE_PUBLISHED)
+	 //->propertyCondition('field_product_category','value',  '27' , '=')
+	  //->fieldCondition('field_news_types', 'value', 'spotlight', '=')
+	  //->fieldCondition('field_photo', 'fid', 'NULL', '!=')
+	 // ->fieldCondition('field_faculty_tag', 'tid', $value)
+	 // ->fieldCondition('field_news_publishdate', 'value', $year . '%', 'like')
+	  //->fieldOrderBy('field_priority', 'value', 'DESC')
+	  ->range(0, 100)
+	  ->addMetaData('account', user_load(1)); // Run the query as user 1.
+
+	$result = $query->execute();
+	
+	if (isset($result['node'])) {
+	  $news_items_nids = array_keys($result['node']);
+	  $news_items = entity_load('node', $news_items_nids);
+	
+
+		foreach($news_items as $row){
+			echo $row->title."<br>";
+			echo $row->body['und'][0]['value']."<br>";
+			
+		}
+	}
+	
+ */  
+}
 
 function custommodule_preprocess_node(&$variables) {
     $node = $variables['node'];
@@ -56,11 +86,15 @@ function custommodule_form_alter(&$form, &$form_state, $form_id) {
 	}
 
     if($form_id == 'product_node_form'){
+
+		$form['base']['model']['#description'] = '';
         $form['taxonomy_catalog']['#type'] = 'hidden';
         $form['base']['prices']['list_price']['#type'] = 'hidden';
         $form['base']['prices']['cost']['#type'] = 'hidden';
         $form['base']['shippable']['#type'] = 'hidden';
         $form['base']['prices']['sell_price']['#title'] = 'Price';
+        $form['base']['prices']['sell_price']['#description'] = '';
+        $form['base']['ordering']['#description'] = '';
 
 
         $x=arg();
@@ -86,6 +120,6 @@ function MYMODULE_submit_category ($form, &$form_state) {
 
 function MYMODULE_submit_product ($form, &$form_state) {
     //code here
-    $form_state['redirect'] = '/category-listing'; //REDIRECTS TO STEP 2 after submit
+    $form_state['redirect'] = '/product-admin-list'; //REDIRECTS TO STEP 2 after submit
 }
 
