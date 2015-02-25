@@ -38,8 +38,12 @@
 	if ( !$user->uid ) { ?>
 		<a href="<?php echo $GLOBALS['base_url']  ?>/user/login">Login</a>    
   <?php }else{ ?>
-		<a href="<?php echo $GLOBALS['base_url']  ?>/user/logout">Log Out</a>    
-  <?php } ?>
+		<a href="<?php echo $GLOBALS['base_url']  ?>/user/logout">Log Out</a> 
+			<?php 
+			$roles=($user->roles);
+			if (array_key_exists(5, $roles)) {?>
+		<a href="<?php echo $GLOBALS['base_url']  ?>/user/<?php echo $user->uid;?>/orders">My Order</a>    
+  <?php }} ?>
   <a href="#">Satisfaction Guarantee</a>    <a href="#" class="typemenu">US-English</a> <a href="#" class="cartmenu">Cart <span>(00)</span></a>
   </div>
   <div class="clear"></div>
