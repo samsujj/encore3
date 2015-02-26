@@ -129,8 +129,9 @@ function custommodule_form_alter(&$form, &$form_state, $form_id) {
 function custommodule_js_alter(&$javascript) {
 	$x=arg();
 
+
 	// Swap out jQuery to use an updated version of the library.
-    if($x[0]=='product-details')
+    if($x[0]=='product-details' || 'products' || 'allproducts'  )
         $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'custommodule') . '/js/jquery.js';
 }
 

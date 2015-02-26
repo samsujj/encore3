@@ -33,7 +33,11 @@
 
 
 <div class="top-right-contain">
+    <?php print render($page[' preface_first']); ?>
+
   <div class="tright-menu">
+      <?php print render($page['header']); ?>
+
   <?php  global $user;
 	if ( !$user->uid ) { ?>
 		<a href="<?php echo $GLOBALS['base_url']  ?>/user/login">Login</a>    
@@ -44,14 +48,11 @@
 			if (array_key_exists(5, $roles)) {?>
 		<a href="<?php echo $GLOBALS['base_url']  ?>/user/<?php echo $user->uid;?>/orders">My Order</a>    
   <?php }} ?>
-  <a href="#">Satisfaction Guarantee</a>    <a href="#" class="typemenu">US-English</a> <a href="#" class="cartmenu">Cart <span>(00)</span></a>
+  <a href="<?php echo $GLOBALS['base_url']  ?>/Satisfaction-Guarantee">Satisfaction Guarantee</a>    <a href="#" class="typemenu">US-English</a> <a href="#" class="cartmenu">Cart <span>(00)</span></a>
   </div>
   <div class="clear"></div>
-  
-  <div class="left-menu">
-  <a href="#">Shop</a>     <a href="#">About Us</a>     <a href="#">Opportunity</a>
-  
-  </div>
+    <?php print render($page['content_top']); ?>
+
   
   <div class="search-contain">
    <div class="search-main">
@@ -116,12 +117,12 @@
   
   
   <div class="footer-menu">
-  <a href="#">eCatalog </a>           
-  <a href="#"> Contact Us</a>            
-  <a href="#"> Newsletter</a>             
-  <a href="#">Email Signup </a>            
-  <a href="#">DSA Code of Ethics  </a>           
-  <a href="#">Privacy Policy</a>
+  <a href="<?php echo $GLOBALS['base_url']  ?>/eCatalog">eCatalog </a>
+  <a href="<?php echo $GLOBALS['base_url']  ?>/Contact-Us"> Contact Us</a>
+  <a href="<?php echo $GLOBALS['base_url']  ?>/Newsletters"> Newsletter</a>
+  <a href="<?php echo $GLOBALS['base_url']  ?>/Email-Sign-Up">Email Signup </a>
+  <a href="<?php echo $GLOBALS['base_url']  ?>/DSA-Code_of_Ethics ">DSA Code of Ethics  </a>
+  <a href="<?php echo $GLOBALS['base_url']  ?>/Privacy-Policy">Privacy Policy</a>
   
   </div>
   
