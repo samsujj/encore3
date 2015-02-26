@@ -70,6 +70,8 @@ a {
 
 .top-right-contain .left-menu{ margin:40px 0 0 0; width:400px; float:left;  font-family: 'open_sansregular'; position:relative; }
 
+.top-right-contain .left-menu ul li{ list-style:none; float:left; position:relative;}
+
 .top-right-contain .left-menu a{ font-size:15px; color:#083457; padding:0 12px;}
 .top-right-contain .left-menu a:hover{ color:#7fb41c;}
 
@@ -1957,10 +1959,25 @@ abbr{ border:none;}
 .top-right-contain .item-list li{ margin:2px; padding:0; display:inline; float:left; border:solid 1px #ddd;}
 .top-right-contain .item-list li img{ margin:0 0 0 -12px; overflow:hidden;}
 
-.top-right-contain  .image_menu{ width:976px; position:absolute; background:#fff; padding:10px;  border:solid 1px #ddd; left:-202px; top:30px;}
+.top-right-contain  .image_menu{ width:978px; position:absolute; background:#fff; padding:10px;  border:solid 1px #ddd; left:-202px; }
 
 
 
-.top-right-contain .left-menu a + .image_menu { display:none;}
+.top-right-contain .left-menu ul li a:hover{}
 
-.top-right-contain .left-menu a:hover + .image_menu { display:block;}
+.top-right-contain .left-menu ul li a + ul{ display:none;}
+
+.top-right-contain .left-menu ul li:hover a + ul{ display:block;}
+
+
+.top-right-contain .left-menu ul li .image_menu div{ margin:0; padding:0;}
+
+
+.top-right-contain .left-menu ul li .image_menu a{ display:none;}
+.top-right-contain .left-menu ul li .image_menu li a{ display:block;}
+
+.top-right-contain  .shoptab{ display:block!important; margin-left:-12px!important;}
+
+.top-right-contain .left-menu ul li a:hover{ color:#7fb41c; cursor:pointer;}
+
+.top-right-contain .left-menu ul{ margin:0!important; padding:0!important;}
