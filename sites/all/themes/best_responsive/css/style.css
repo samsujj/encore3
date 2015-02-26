@@ -1959,4 +1959,8 @@ abbr{ border:none;}
 
 .top-right-contain  .image_menu{ width:976px; position:absolute; background:#fff; padding:10px;  border:solid 1px #ddd; left:-202px; top:30px;}
 
-.top-right-contain .left-menu + .image_menu { display:none;}
+
+
+.top-right-contain .left-menu a + .image_menu { display:none;}
+
+.top-right-contain .left-menu a:hover + .image_menu { display:block;}
