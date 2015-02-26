@@ -131,7 +131,7 @@ function custommodule_js_alter(&$javascript) {
 
 
 	// Swap out jQuery to use an updated version of the library.
-    if($x[0]=='product-details' || 'products' || 'allproducts'  )
+    if($x[0]=='product-details' ||$x[0]== 'products' ||$x[0]== 'allproducts'  )
         $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'custommodule') . '/js/jquery.js';
 }
 
