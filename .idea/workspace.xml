@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77b80d04-0163-4196-a527-53de35a0ea64" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/best_responsive/images/Thumbs.db" afterPath="$PROJECT_DIR$/sites/all/themes/best_responsive/images/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/best_responsive/templates/page.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/best_responsive/templates/page.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css" afterPath="$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="77b80d04-0163-4196-a527-53de35a0ea64" name="Default" comment="" />
     <ignored path="encore.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,20 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2215" column="32" selection-start="77427" selection-end="77427" vertical-scroll-proportion="0.90340906" vertical-offset="37019" max-vertical-offset="37791">
+            <state line="2215" column="32" selection-start="77427" selection-end="77427" vertical-scroll-proportion="-25.44" vertical-offset="37019" max-vertical-offset="37791">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.tpl.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.tpl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/templates/page.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="298" column="22" selection-start="11294" selection-end="11300" vertical-scroll-proportion="-11.423077" vertical-offset="3545" max-vertical-offset="4658">
+            <state line="132" column="0" selection-start="3701" selection-end="10519" vertical-scroll-proportion="0.31578946" vertical-offset="2022" max-vertical-offset="3468">
               <folding>
+                <element signature="tag#div#4" expanded="false" />
+                <element signature="tag#div#0;tag#div#4" expanded="false" />
                 <element signature="tag#div#0;tag#div#1;tag#div#4" expanded="false" />
                 <element signature="tag#div#1;tag#div#1;tag#div#4" expanded="false" />
                 <element signature="tag#div#2;tag#div#1;tag#div#4" expanded="false" />
@@ -238,6 +235,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -293,22 +291,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2215" column="32" selection-start="77427" selection-end="77427" vertical-scroll-proportion="-25.44" vertical-offset="37019" max-vertical-offset="37791">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/templates/page.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="298" column="22" selection-start="11294" selection-end="11300" vertical-scroll-proportion="-11.423077" vertical-offset="3545" max-vertical-offset="4658">
+        <state line="132" column="0" selection-start="3701" selection-end="10519" vertical-scroll-proportion="0.31578946" vertical-offset="2022" max-vertical-offset="3468">
           <folding>
+            <element signature="tag#div#4" expanded="false" />
+            <element signature="tag#div#0;tag#div#4" expanded="false" />
             <element signature="tag#div#0;tag#div#1;tag#div#4" expanded="false" />
             <element signature="tag#div#1;tag#div#1;tag#div#4" expanded="false" />
             <element signature="tag#div#2;tag#div#1;tag#div#4" expanded="false" />
             <element signature="tag#div#5" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2215" column="32" selection-start="77427" selection-end="77427" vertical-scroll-proportion="0.90340906" vertical-offset="37019" max-vertical-offset="37791">
-          <folding />
         </state>
       </provider>
     </entry>

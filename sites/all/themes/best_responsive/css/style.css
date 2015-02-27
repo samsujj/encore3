@@ -212,7 +212,7 @@ a {
 .banner4 .block3  .rearn-more7 a{ color:#638524; font-style:italic;}
 
 
-.page-user-login h2{ font-size:22px; color:#083457; font-weight:normal; text-align:center; font-family: Arial, Helvetica, sans-serif; text-transform:uppercase;  background:url(../images/login2.png) no-repeat left center; width:88px; margin:28px auto; margin-bottom:20px; padding:0 0 0 30px;}
+.page-user-login .region-content h2{ font-size:22px; color:#083457; font-weight:normal; text-align:center; font-family: Arial, Helvetica, sans-serif; text-transform:uppercase;  background:url(../images/login2.png) no-repeat left center; width:88px; margin:28px auto; margin-bottom:20px; padding:0 0 0 30px;}
 
 .page-user-login #block-system-main{ border-top:solid 1px #083457; background:url(../images/login.png) no-repeat  center 28px; padding:100px 0 28px 0;}
 
@@ -1979,7 +1979,7 @@ abbr{ border:none;}
 .top-right-contain .item-list li{ margin:2px; padding:0; display:inline; float:left; border:solid 1px #ddd;}
 .top-right-contain .item-list li img{ margin:0 0 0 -12px; overflow:hidden;}
 
-.top-right-contain  .image_menu{ width:978px; position:absolute; background:#fff; padding:10px;  border:solid 1px #ddd; left:-202px; }
+.top-right-contain  .image_menu{ width:978px; position:absolute; background:#fff; padding:10px;  border:solid 1px #ddd; left:-202px; z-index:999; }
 
 
 
@@ -2000,7 +2000,7 @@ abbr{ border:none;}
 
 .top-right-contain .left-menu ul li a:hover{ color:#7fb41c; cursor:pointer;}
 
-.top-right-contain .left-menu ul{ margin:0!important; padding:0!important;}      
+.top-right-contain .left-menu ul{ margin:0!important; padding:0!important;}
 
 
 .menu-contain a:hover {
