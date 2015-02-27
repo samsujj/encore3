@@ -46,15 +46,24 @@
 			<?php 
 			$roles=($user->roles);
 			if (array_key_exists(5, $roles)) {?>
-		<a href="<?php echo $GLOBALS['base_url']  ?>/user/<?php echo $user->uid;?>/orders">My Order</a>    
+		<!--<a href="<?php /*echo $GLOBALS['base_url']  */?>/user/<?php /*echo $user->uid;*/?>/orders">My Order</a> -->
   <?php }} ?>
   <a href="<?php echo $GLOBALS['base_url']  ?>/Satisfaction-Guarantee">Satisfaction Guarantee</a>    <a href="#" class="typemenu">US-English</a> <a href="#" class="cartmenu">Cart <span>(00)</span></a>
   </div>
   <div class="clear"></div>
     <?php print render($page['content_top']); ?>
 
-  
+
+
+
   <div class="search-contain">
+
+      <?php  global $user;
+      if ( $user->uid ) { ?>
+
+     <div class="account-menu"> <a href="#">My Account</a></div>
+
+      <?php }?>
    <div class="search-main">
      <input type="text"  placeholder="Search Products" />
      
@@ -80,12 +89,32 @@
 
 <div class="menu-contain">
   <div class="main-wrapper">
- <a href="#"> Nature’s Synergy  </a>                             
- <a href="#"> Nopal Activ  </a>                                           
- <a href="#"> Beauty  </a>                                            
- <a href="#">Home Life  </a>                                            
- <a href="#">Tech-Link </a>             
-  
+      <ul>
+
+ <li> <span><a href="#">Go To My Store </a> </span>
+<ul>
+    <li>
+  <div class="image_menu">
+      <?php
+      $block = block_load('views', 'category_navigation-block');
+      $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+      print $output;
+      ?>
+  </div>
+    </li>
+</ul>
+ </li>
+          <li><a href="<?php echo $GLOBALS['base_url']  ?>/products/2">Home Life  </a> </li>
+
+          <li><a href="<?php echo $GLOBALS['base_url']  ?>/products/3"> Allure3  </a> </li>
+          <li><a href="<?php echo $GLOBALS['base_url']  ?>/products/4">Tech-Link </a> </li>
+          <li><a href="<?php echo $GLOBALS['base_url']  ?>/products/5"> Nature’s Synergy  </a> </li>
+
+
+
+      </ul>
+      <div class="clear"></div>
+
   </div>
 
 </div>
@@ -96,6 +125,54 @@
 <?php print render($page['content']); ?>
 </div>
 <!-- Content [end] -->
+
+<div class="distributor-main">
+
+
+    <div class="distributor-left">
+        <h2>Join As A Distributor</h2>
+
+
+
+        <ul>
+
+            <li>  <a href="#" class="joinnow">Join Now</a></li>
+
+            <li>
+
+
+
+
+        <a href="#" class="cartbtn">Go To My Store</a>
+
+
+                <ul>
+
+                    <li> <div class="image_menu">
+                            <?php
+                            $block = block_load('views', 'category_navigation-block');
+                            $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+                            print $output;
+                            ?>
+                        </div></li>
+                </ul>
+
+            </li>
+
+        </ul>
+
+       <div class="bottom-img"><img src="<?php  echo  base_path() . path_to_theme(); ?>/images/bottomimage.png"  alt="#"/></div>
+
+
+
+    </div>
+
+
+
+    <div class="clear"></div>
+</div>
+
+
 
 <!-- Footer [start] -->
 <div class="main-wrapper">
