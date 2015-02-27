@@ -2101,6 +2101,7 @@ abbr{ border:none;}
     line-height: 60px;
     font-family: "open_sansregular";
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .distributor-main .distributor-left .cartbtn {
@@ -2117,17 +2118,18 @@ abbr{ border:none;}
     display: block;
     line-height: 60px;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 .distributor-main .distributor-left ul li{ list-style: none; float: left; width: 235px; display: block; margin: 10px 7px 20px 7px; position: relative;}
 
-
+.distributor-main .distributor-left ul{ clear: both; padding-bottom: 25px;}
 
 .distributor-main .distributor-left ul li ul{ display: none; position: absolute; }
 
 .distributor-main .distributor-left ul li:hover ul{ display: block;}
 
 
-.distributor-main .distributor-left ul li .image_menu{width: 964px;
+.distributor-main .distributor-left ul li .image_menu{width: 976px;
     position: absolute;
     z-index: 99;
     background: none repeat scroll 0% 0% #FFF;
@@ -2157,4 +2159,60 @@ abbr{ border:none;}
     margin: 0px 2px;
     padding: 0px;
     border: 1px solid #DDD;
+    width:238px;
+
 }
+
+.distributor-main .distributor-left  .bottom-img{ widows: 90%; margin: 0 auto;}
+.distributor-main .distributor-left  .bottom-img img{ width: 100%;}
+
+
+.distributor-main .distributor-right{ width: 455px; border:solid 1px #A7A7A7; float: right; padding: 10px 0; font-family: "open_sansregular";}
+
+
+.distributor-main .distributor-right h2{font-family: "open_sansregular";
+    font-size:22px;
+    color: #393939;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: center;}
+
+
+.distributor-main .distributor-right .form-block-contain{ float: none; margin: 17px auto;}
+
+.distributor-main .distributor-right .blog-contain{ background:#fff  url("../images/blog-bg.png") repeat-x left bottom; border: solid 1px #d3d3d3; padding: 2%;
+    width: 90%; margin: 5px auto; font-size: 13px; color: #636363; line-height: 22px;
+
+}
+
+
+.distributor-main .distributor-right .blog-contain h3{ font-size: 15px; color: #638524; font-weight: normal;}
+
+.distributor-main .distributor-right .blog-contain h4{ font-size: 13px; color: #272727; font-weight: normal; padding: 5px 0;}
+
+.distributor-main .distributor-right .blog-contain a.read-more{ color: #638524; display: inline-block; float: left; margin: 10px 0;}
+
+.distributor-main .distributor-right .blog-contain .icon-div{ width: 105px; float: right; margin: 6px 0;}
+
+.distributor-main .distributor-right .blog-contain .blog-pic{ width: 90px; float: left; margin:0 8px 5px 0; border: solid 2px #fff; box-shadow: 0 0 5px #888; }
+
+
+.new-banner1{ width:814px;  background: url("../images/comment.png") no-repeat 20px 10px  #f4f4f4; padding: 10px 10px 10px 180px; border:solid 1px #A7A7A7; margin: 28px auto; min-height: 110px; font-family: "open_sansregular"; font-size: 13px; color: #636363; line-height: 24px;}
+
+.new-banner1 span{ display: block; margin: 5px 0; color: #2393c3;}
+
+
+.new-banner2{ width:1000px;  background: url("../images/newbanner2.png") no-repeat;   margin: 28px auto; height:353px; font-family: "open_sansregular"; font-size: 13px; color: #636363; line-height: 20px; overflow: hidden;}
+
+.new-banner2 .banner-text { width: 660px; margin: 26px 0 0 26px; overflow: hidden;}
+
+.new-banner2 .banner-text h2{ font-size: 26px; color: #638524; padding-bottom: 18px;}
+
+.new-banner2 .banner-text h3{ font-size: 15px; color: #393939; padding-bottom: 18px;}
+
+.socialfeeds{ width: 1000px; margin:28px auto; font-family: "open_sansregular";}
+
+.socialfeeds h2{ font-size: 20px; color: #393939; text-align: center; font-style: italic; border-bottom: solid 2px #638524; padding: 0 0 20px 0;}
+.socialfeeds .s-icon{ width: 131px; margin:0 auto; margin-top: 18px;}
+
+.socialfeeds .s-icon img{ margin: 0 8px;}

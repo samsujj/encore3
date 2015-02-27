@@ -31,8 +31,22 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2135" column="13" selection-start="74130" selection-end="74130" vertical-scroll-proportion="0.51704544" vertical-offset="35931" max-vertical-offset="36805">
+            <state line="2215" column="32" selection-start="77427" selection-end="77427" vertical-scroll-proportion="0.90340906" vertical-offset="37019" max-vertical-offset="37791">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.tpl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/templates/page.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="298" column="22" selection-start="11294" selection-end="11300" vertical-scroll-proportion="-11.423077" vertical-offset="3545" max-vertical-offset="4658">
+              <folding>
+                <element signature="tag#div#0;tag#div#1;tag#div#4" expanded="false" />
+                <element signature="tag#div#1;tag#div#1;tag#div#4" expanded="false" />
+                <element signature="tag#div#2;tag#div#1;tag#div#4" expanded="false" />
+                <element signature="tag#div#5" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,6 +64,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/sites/all/themes/best_responsive/templates/page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css" />
       </list>
     </option>
@@ -194,7 +209,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,9 +293,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/templates/page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="298" column="22" selection-start="11294" selection-end="11300" vertical-scroll-proportion="-11.423077" vertical-offset="3545" max-vertical-offset="4658">
+          <folding>
+            <element signature="tag#div#0;tag#div#1;tag#div#4" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#4" expanded="false" />
+            <element signature="tag#div#2;tag#div#1;tag#div#4" expanded="false" />
+            <element signature="tag#div#5" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/best_responsive/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2135" column="13" selection-start="74130" selection-end="74130" vertical-scroll-proportion="0.51704544" vertical-offset="35931" max-vertical-offset="36805">
+        <state line="2215" column="32" selection-start="77427" selection-end="77427" vertical-scroll-proportion="0.90340906" vertical-offset="37019" max-vertical-offset="37791">
           <folding />
         </state>
       </provider>
